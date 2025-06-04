@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <!-- Cargar la fuente Inter desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Cargar Tailwind vía CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Habilitar modo oscuro con la clase "dark"
+        theme: {
+          extend: {
+            colors: {
+              // Dark Theme
+              'very-dark-blue': 'hsl(230, 17%, 14%)',
+              'very-dark-blue-top': 'hsl(232, 19%, 15%)',
+              'dark-desaturated-blue': 'hsl(228, 28%, 20%)',
+              'desaturated-blue': 'hsl(228, 34%, 66%)',
+              'white-text': 'hsl(0, 0%, 100%)',
+              // Light Theme
+              'white-bg': 'hsl(0, 0%, 100%)',
+              'very-pale-blue': 'hsl(225, 100%, 98%)',
+              'light-grayish-blue': 'hsl(227, 47%, 96%)',
+              'dark-grayish-blue': 'hsl(228, 12%, 44%)',
+              'very-dark-blue-text': 'hsl(230, 17%, 14%)',
+              // Colores adicionales
+              'lime-green': 'hsl(163, 72%, 41%)',
+              'bright-red': 'hsl(356, 69%, 56%)',
+              // Redes sociales
+              'face-book': 'hsl(208, 92%, 53%)',
+              'twitter-color': 'hsl(203, 89%, 53%)',
+              'instagram-start': 'hsl(37, 97%, 70%)',
+              'instagram-end': 'hsl(329, 70%, 58%)',
+              'youtube-color': 'hsl(348, 97%, 39%)',
+
+              //tema verde fondo pagina
+              'mint-bg-light': 'hsl(142, 76%, 97%)',
+                'mint-bg-soft': 'hsl(150, 100%, 98%)',
+                'mint-bg-water': 'hsl(180, 100%, 98%)',
+              //tema verde color tarjetas
+              'card-mint-white': 'hsl(120, 14%, 99%)',
+              'card-pure-white': 'hsl(0, 0%, 100%)',
+              'card-mint-pale': 'hsl(140, 43%, 98%)',
+              //tema verde oscuro fondo pagina
+              'dark-mint-deep': 'hsl(160, 85%, 15%)',
+              'dark-mint-black': 'hsl(150, 75%, 9%)',
+              'dark-mint-gray': 'hsl(155, 28%, 14%)',
+              //tema verde oscuro color paginas
+              'dark-card-mint': 'hsl(150, 18%, 15%)',
+              'dark-card-mint-alt': 'hsl(155, 22%, 18%)',
+              'dark-card-carbon': 'hsl(150, 41%, 10%)',
+
+              //fondo de pagina DIA - morado:
+              'purple-bg-light': 'hsl(270, 50%, 98%)',
+              'purple-bg-soft': 'hsl(260, 60%, 97%)',
+              'purple-bg-lavender': 'hsl(250, 40%, 96%)',
+
+              //tarjetas moradas DIA
+              'card-purple-white': 'hsl(270, 25%, 99%)',
+              'card-pure-white': 'hsl(0, 0%, 100%)',
+              'card-purple-pale': 'hsl(260, 30%, 97%)',
+
+              //texto DIA morado
+              'text-primary': 'hsl(270, 15%, 15%)',
+              'text-secondary': 'hsl(270, 10%, 35%)',
+              'text-muted': 'hsl(270, 8%, 55%)',
+              'text-white': 'hsl(0, 0%, 100%)',
+              'text-accent': 'hsl(259, 94%, 51%)',
+
+              //Fondo morado OSCURO
+              'dark-purple-deep': 'hsl(270, 50%, 8%)',
+              'dark-purple-rich': 'hsl(260, 40%, 12%)',
+              'dark-purple-midnight': 'hsl(250, 35%, 10%)',
+
+              //tarjetas MORADO OSCURO
+              'dark-card-purple': 'hsl(270, 30%, 15%)',
+              'dark-card-purple-alt': 'hsl(260, 25%, 18%)',
+              'dark-card-deep': 'hsl(270, 40%, 12%)',
+
+              //texto MORADO OSCURO
+              'dark-text-primary': 'hsl(270, 15%, 95%)',
+              'dark-text-secondary': 'hsl(270, 12%, 80%)',
+              'dark-text-muted': 'hsl(270, 10%, 60%)',
+              'dark-text-accent': 'hsl(259, 94%, 70%)',
+              'dark-text-contrast': 'hsl(0, 0%, 100%)',
+
+              // Toggle
+              'toggle-gray': 'hsl(230, 22%, 74%)',
+
+              //gradiente
+              'instagram-gradient':
+                'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
+            },
+            backgroundImage: {
+              'instagram-gradient':
+                'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
+            },
+
+            backgroundImage: {
+              'toggle-aqua':
+                'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
+              'ig-gradient':
+                'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'], // Añadir Inter como fuente personalizada
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white dark:bg-very-dark-blue">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
