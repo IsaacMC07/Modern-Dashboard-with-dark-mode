@@ -1,9 +1,10 @@
-import facebookLogo from '/src/assets/images/icon-facebook.svg';
-import twitterLogo from '../assets/images/icon-twitter.svg';
-import instagramLogo from '../assets/images/icon-instagram.svg';
-import youtubeLogo from '../assets/images/icon-youtube.svg';
-import iconUp from '../assets/images/icon-up.svg';
-import iconDown from '../assets/images/icon-down.svg';
+// Rutas directas a los assets en la carpeta public
+const facebookLogo = './images/icon-facebook.svg';
+const twitterLogo = './images/icon-twitter.svg';
+const instagramLogo = './images/icon-instagram.svg';
+const youtubeLogo = './images/icon-youtube.svg';
+const iconUp = './images/icon-up.svg';
+const iconDown = './images/icon-down.svg';
 
 const networkLogos = {
   Facebook: facebookLogo,
